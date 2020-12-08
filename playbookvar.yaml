@@ -1,0 +1,12 @@
+---
+- hosts: linux
+  vars:
+    test: Welcome to training
+    Test: Testing variables are case sensitive or not
+  tasks:
+  - name: print varible
+    debug: 
+      msg="{{ test }}"
+  - name: print another variable
+    debug:
+      msg="{{ Test }}"
